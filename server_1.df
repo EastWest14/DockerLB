@@ -1,0 +1,4 @@
+FROM centos:latest
+RUN echo 'abc1' > index.html
+ENTRYPOINT ["python","-m","SimpleHTTPServer","8000","&"]
+
